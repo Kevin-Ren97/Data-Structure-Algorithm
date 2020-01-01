@@ -3,11 +3,6 @@
 
 using ElementType = int;	// #define ElementType int
 
-void Sort(ElementType a[], size_t size)	// The outer function
-{
-	Selection_sort(a, size);
-}
-
 void Selection_sort(ElementType a[], size_t size)
 {
 	for (size_t i = 0; i < size; i++) {
@@ -19,6 +14,11 @@ void Selection_sort(ElementType a[], size_t size)
 		}
 		std::swap(a[min_index], a[i]);
 	}
+}
+
+void Sort(ElementType a[], size_t size)	// The outer function
+{
+	Selection_sort(a, size);
 }
 
 int main(){
