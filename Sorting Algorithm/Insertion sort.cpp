@@ -2,11 +2,6 @@
 
 using ElementType = int;	// #define ElementType int
 
-void Sort(ElementType a[], size_t size)	// The outer function
-{
-	Insertion_sort(a, size);
-}
-
 void Insertion_sort(ElementType a[], size_t size)
 {
 	for (size_t i = 1; i < size; i++) {
@@ -17,6 +12,11 @@ void Insertion_sort(ElementType a[], size_t size)
 		}
 		a[j] = tmp;
 	}
+}
+
+void Sort(ElementType a[], size_t size)	// The outer function
+{
+	Insertion_sort(a, size);
 }
 
 int main(){
