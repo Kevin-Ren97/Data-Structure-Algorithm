@@ -44,6 +44,10 @@ void Merge_sort(ElementType a[], size_t size)
 	else
 		throw std::runtime_error("No space for tmp array!");
 }
+void Sort(ElementType a[], size_t size)	// The outer function
+{
+	Merge_sort(a, size);
+}
 int main(){
 	ElementType a[10] = { 5,6,2,3,9,4,10,8,7,1 };
 	try {
