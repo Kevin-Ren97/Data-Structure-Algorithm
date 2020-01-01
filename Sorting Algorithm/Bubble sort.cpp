@@ -24,7 +24,7 @@ void Bubble_sort(ElementType a[], size_t size)
 
 int main(){
 	ElementType a[10] = { 5,6,2,3,9,4,10,8,7,1 };
-	ElementType b[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	ElementType b[10] = { 1,2,3,4,5,6,7,8,9,10 };	//for test the noChange
 	Sort(a, 10);
 	for (size_t i = 0; i < 10; i++) {
 		std::cout << a[i] << " ";
